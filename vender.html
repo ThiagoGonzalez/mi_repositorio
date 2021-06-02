@@ -12,12 +12,9 @@
 
     <meta name="title" content="Stock TH">
     <meta name="lenguage" content="Spanish">
-    <meta name="description" content="Compra y venta de zapatillas, indumentaria y accesorios. Productos originales y autenticos.">
+    <meta name="description" content="Compra y venta de zapatillas, indumentaria y accesorios">
 
-    <meta name="keywords" content="ZAPATILLAS, ROPA, ZAPATOS, BOTAS, ACCESORIOS, GORROS, RELOJ, MODA, SNEAKERS">
-
-    <title>Home |Stock TH</title>
-
+    <title>Venta | Stock TH</title>
 </head>
 
 <body>
@@ -54,7 +51,7 @@
                                 <a class="nav-link" href="contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="vender.html">Vender</a>
+                                <a class="nav-link active" aria-current="page" href="vender.html">Vender</a>
                             </li>
                         </ul>
                         <form class="d-flex">
@@ -67,78 +64,40 @@
         </nav>
     </header>
 
-    <!-- CAROUSEL PAGINA INICIO -->
-    <div class="container">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/carousel-inicio/slider3.jpg" class="d-block w-100 imagen-carousel" alt="slider1 no disponible">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3 class="texto-titulo-animado">Lorem</h3>
-                        <p class="texto-animado">Lorem  laut-i cabelli ipsum dolor sit amet consectetur adipisicing elit. Adipisci esse vitae exercitationem
-                            fugit, numquam minus!</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel-inicio/slider1.jpeg" class="d-block w-100 imagen-carousel" alt="slider2 no disponible">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3 class="texto-titulo-animado">Lorem</h3>
-                        <p class="texto-animado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci esse vitae exercitationem
-                            fugit, numquam minus!</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel-inicio/slider2.jpg" class="d-block w-100 imagen-carousel" alt="slider3 no disponible">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3 class="texto-titulo-animado">Lorem</h3>
-                        <p class="texto-animado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci esse vitae exercitationem
-                            fugit, numquam minus!</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
-
-    <!-- CONTENIDO PAGINA -->
     <main>
-        <section class="contenido1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-4 text-center">
-                        <img class="imagen-banner shadow-lg" src="img/articulos/jordan-offwhite.jpg" alt="foto no disponible">
-                        <h5 class="texto-titulo-animado">Titulo 1</h5>
-                        <p class="texto-animado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quo est illum reiciendis
-                            odit veniam quas, sint repellat ad officiis aperiam officia vitae vel mollitia numquam sit
-                            tempora. At, ad!</p>
-                    </div>
-                    <div class="col-12 col-sm-4 text-center">
-                        <img class="imagen-banner shadow-lg"  src="img/articulos/bape-psg.jpg" alt="foto no disponible">
-                        <h5 class="texto-titulo-animado">Titulo 2</h5>
-                        <p class="texto-animado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quo est illum reiciendis
-                            odit veniam quas, sint repellat ad officiis aperiam officia vitae vel mollitia numquam sit
-                            tempora. At, ad!</p>
-                    </div>
-                    <div class="col-12 col-sm-4 text-center">
-                        <img class="imagen-banner shadow-lg"  src="img/articulos/jordan1-dior.jpg" alt="foto no disponible">
-                        <h5 class="texto-titulo-animado">Titulo 3</h5>
-                        <p class="texto-animado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quo est illum reiciendis
-                            odit veniam quas, sint repellat ad officiis aperiam officia vitae vel mollitia numquam sit
-                            tempora. At, ad!</p>
+        <div class="container">
+            <div class="formulario-venta">
+                <div class="container-fluid px-1 py-5 mx-auto">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                            <h3>FORMULARIO DE VENTA</h3>
+                            <div class="card">
+                                <h5 class="text-center mb-4">Llena los siguientes datos</h5>
+                                <form class="form-card" onsubmit="event.preventDefault()">
+                                    <div class="row justify-content-between text-left">
+                                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nombre<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="" onblur="validate(1)"> </div>
+                                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Apellido<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="" onblur="validate(2)"> </div>
+                                    </div>
+                                    <div class="row justify-content-between text-left">
+                                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder="" onblur="validate(3)"> </div>
+                                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Telefono<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="" onblur="validate(4)"> </div>
+                                    </div>
+                                    <div class="row justify-content-between text-left">
+                                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Modelo del producto<span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                                    </div>
+                                    <div class="row justify-content-between text-left">
+                                        <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Descripcion del producto<span class="text-danger"> *</span></label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(6)"> </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Enviar</button> </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- FOOTER -->

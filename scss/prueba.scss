@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+
+
+/*-------------------------------------------------------------ENTREGA APLICANDO SASS - OPERACIONES--------------------------------------------------------------------------*/
+
+@each $page in accesorios,indumentaria,zapatillas{
+    .#{$page} {
+        background-image: url("../img/banner-inicio/#{$page}.jpg");
+        width: 100%;
+        height: 260px;
+    }
+}
+
+@each $page in contacto,nosotros{
+    .#{$page} {
+        background-image: url("../img/banner-inicio/#{$page}.jpg");
+        padding-top: 300px;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.texto-seccion {
+    color: white;
+    padding-bottom: 150px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------Encabezado INDEX----------------------------------------------------------------------------------*/
+
+/*Edicion LOGO*/
+
+.logotipo {
+    width: 60px;
+}
+
+.btn-outline-success {
+    border-color: #fbf9f9 !important;
+}
+
+.btn-outline-success:hover {
+    background-color: #fbf9f9 !important;
+    color: #262626 !important;
+}
+
+/*Edicion CAROUSEL*/
+
+
+
+/*Imagenes del carousel*/
+
+.imagen-carousel {
+    width: 90%;
+    height: auto;
+}
+
+/*---------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------*/
+
+
+
+/*Edicion Footer*/
+
+.nav-link{
+    color: #627482;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.container-fluid-footer {
+    overflow: hidden;
+    background: #262626;
+    color: #627482 !important;
+
+}
+
+small {
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.bold-text {
+    color: #989c9e !important
+}
+
+.mt-55 {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.social {
+    font-size: 21px !important
+}
+
+.rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+/*---------------------------------------------------------------------------------Texto secciones----------------------------------------------------------------------------------*/
+
+.texto-seccion {
+    color: white;
+    padding-bottom: 150px;
+}
+
+
+/*---------------------------------------------------------------------------------Seccion VENDER----------------------------------------------------------------------------------*/
+
+.formulario-venta {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card {
+    padding: 30px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.blue-text {
+    color: #262626 !important;
+}
+
+.form-control-label {
+    margin-bottom: 0
+}
+
+input,
+textarea,
+button {
+    padding: 8px 15px;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #262626 !important;
+    outline-width: 0;
+    font-weight: 400
+}
+
+.btn-block {
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-weight: 400;
+    height: 43px;
+    cursor: pointer
+}
+
+.btn-block:hover {
+    color: #fff !important
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+/*---------------------------------------------------------------------------------Contenido en INDEX y SECCIONES----------------------------------------------------------------------------------*/
+
+
+/*Bloques de la pagina*/
+.contenido1,
+.contenido2,
+.contenido3,
+.contenido4 {
+    margin-top: 30px;
+}
+
+.titulo-contenido2 {
+    text-align: center;
+}
+
+.mt-50 {
+    margin-top: 50px
+}
+
+.mb-50 {
+    margin-bottom: 50px
+}
+
+/*Animacion texto*/
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.texto-titulo-animado {
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+
+.texto-animado {
+    animation-duration: 5s;
+    animation-name: aparecer;
+}
+
+.texto-en-imagen {
+    margin-left: 12px;
+}
+
+
+/*Edicion de tarjeta de venta de articulo*/
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .1875rem
+}
+
+.card-img-actions {
+    position: relative
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: center
+}
+
+.card-img {
+    width: 350px
+}
+
+.star {
+    color: red
+}
+
+.bg-cart {
+    background-color: orange;
+    color: #fff
+}
+
+.bg-cart:hover {
+    color: #fff
+}
+
+.bg-buy {
+    background-color: green;
+    color: #fff;
+    padding-right: 29px
+}
+
+.bg-buy:hover {
+    color: #fff
+}
+
+a {
+    text-decoration: none !important
+}
+
+/*Edicion imagenes en CONTENIDO INICIO*/
+
+.imagen-banner {
+    width: 100%;
+    height: 300px;
+}
+
+.imagen-banner:hover {
+    transform: scale(1.02);
+}
+
+.imagen-articulo {
+    width: 100%;
+    height: 240px;
+}
