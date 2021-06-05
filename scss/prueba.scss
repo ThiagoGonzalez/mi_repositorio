@@ -44,13 +44,13 @@
     width: 60px;
 }
 
-.btn-outline-success {
-    border-color: #fbf9f9 !important;
+.borde-botonbuscar {
+    border-color: #fbf9f9;
 }
 
-.btn-outline-success:hover {
-    background-color: #fbf9f9 !important;
-    color: #262626 !important;
+.borde-botonbuscar:hover {
+    background-color: #fbf9f9;
+    color: #262626;
 }
 
 /*Edicion CAROUSEL*/
@@ -60,7 +60,7 @@
 /*Imagenes del carousel*/
 
 .imagen-carousel {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -81,32 +81,32 @@
 .container-fluid-footer {
     overflow: hidden;
     background: #262626;
-    color: #627482 !important;
+    color: #627482;
 
 }
 
 small {
-    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) 
 }
 
 .bold-text {
-    color: #989c9e !important
+    color: #989c9e
 }
 
 .mt-55 {
-    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360)))
 }
 
 h3 {
-    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360)))
 }
 
 .social {
-    font-size: 21px !important
+    font-size: 21px;
 }
 
 .rights {
-    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360)))
 }
 
 /*---------------------------------------------------------------------------------Texto secciones----------------------------------------------------------------------------------*/
@@ -128,12 +128,12 @@ h3 {
     padding: 30px 40px;
     margin-top: 60px;
     margin-bottom: 60px;
-    border: none !important;
+    border: none;
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
 }
 
 .blue-text {
-    color: #262626 !important;
+    color: #262626;
 }
 
 .form-control-label {
@@ -144,40 +144,40 @@ input,
 textarea,
 button {
     padding: 8px 15px;
-    border-radius: 5px !important;
+    border-radius: 5px ;
     margin: 5px 0px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    font-size: 18px !important;
+    font-size: 18px;
     font-weight: 300
 }
 
 input:focus,
 textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #262626 !important;
+    -moz-box-shadow: none ;
+    -webkit-box-shadow: none ;
+    box-shadow: none;
+    border: 1px solid #262626;
     outline-width: 0;
     font-weight: 400
 }
 
 .btn-block {
     text-transform: uppercase;
-    font-size: 15px !important;
+    font-size: 15px;
     font-weight: 400;
     height: 43px;
     cursor: pointer
 }
 
 .btn-block:hover {
-    color: #fff !important
+    color: #fff
 }
 
 button:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
+    -moz-box-shadow: none ;
+    -webkit-box-shadow: none;
+    box-shadow: none ;
     outline-width: 0
 }
 
@@ -286,7 +286,7 @@ button:focus {
 }
 
 a {
-    text-decoration: none !important
+    text-decoration: none
 }
 
 /*Edicion imagenes en CONTENIDO INICIO*/
