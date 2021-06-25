@@ -78,6 +78,7 @@
     color: white;
 }
 
+
 .container-fluid-footer {
     overflow: hidden;
     background: #262626;
@@ -231,6 +232,17 @@ button:focus {
     margin-left: 12px;
 }
 
+.texto-contacto{
+    height: 120cm;
+}
+
+.nav-link-seccion{
+    color: #627482;
+}
+
+.nav-link-seccion:hover{
+    color:white;
+}
 
 /*Edicion de tarjeta de venta de articulo*/
 .card {
